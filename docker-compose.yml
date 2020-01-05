@@ -7,5 +7,5 @@ services:
     restart: always
     network_mode: "host"
     volumes:
-      - /data/aria2:/data
-      - /media/DCA86D27A86D017E/Downloads:/downloads
+      - ${DATA_DIR}:/data
+      - ${DOWNLOAD_DIR}:/downloads

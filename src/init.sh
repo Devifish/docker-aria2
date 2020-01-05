@@ -11,7 +11,7 @@ echo
 echo "Setting conf"
 touch /data/aria2.session
 if [ ! -f /data/aria2.conf ];then
-  cp /aria2/aria2.conf.default /data/aria2.conf
+  cp /aria2/default-aria2.conf /data/aria2.conf
 fi
 if [ ! -d /data/log/ ];then
   mkdir /data/log/
