@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+  aria2-server:
+    image: devifish/aria2
+    container_name: aria2-server
+    restart: always
+    network_mode: "host"
+    volumes:
+      - /data/aria2:/data
+      - /media/DCA86D27A86D017E/Downloads:/downloads
