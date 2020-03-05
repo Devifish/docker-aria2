@@ -11,4 +11,5 @@ RUN set -xe \
 
 VOLUME /data /downloads
 EXPOSE 6800
+USER 99:100
 ENTRYPOINT ["./init.sh"]
